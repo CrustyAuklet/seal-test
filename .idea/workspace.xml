@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="TestSeal" targetName="TestSeal" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug-arm-none-eabi-8.2.1" CONFIG_NAME="Debug" TOOLCHAIN_NAME="arm-none-eabi-8.2.1" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=./seal-device/toolchain/cortex-m0plus.cmake" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aae81f37-e3bb-4611-9077-f144f2b58d0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/seal-device/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/cmsis_core_m/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/cmsis_core_m/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component-version.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component-version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/hmatrixb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/hmatrixb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/i2s.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/i2s.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/mtb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/mtb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/pac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/pac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/sercom.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/sercom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/sysctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/sysctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/tc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/tc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/tcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/tcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/tcc_lighting.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/tcc_lighting.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/component/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/component/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ac1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ac1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/i2s.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/i2s.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/mtb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/mtb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pac2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ptc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/ptc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sbmatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sbmatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom5.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sercom5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sysctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/sysctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc5.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc6.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc6.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc7.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tc7.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/tcc3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/instance/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/instance/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17du.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17du.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17l.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21e17l.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21g17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21g17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21g17l.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21g17l.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21j17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/pio/samd21j17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/sam.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/sam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17du.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17du.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17l.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21e17l.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21g17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21g17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21g17l.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21g17l.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd21d/samd21j17d.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd21d/samd21j17d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component-version.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component-version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/aes.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/aes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/can.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/can.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/ccl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/ccl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/cmcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/cmcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/freqm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/freqm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/hmatrixb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/hmatrixb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/i2s.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/i2s.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/icm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/icm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/mclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/mclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/osc32kctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/osc32kctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/oscctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/oscctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/pac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/pac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/pcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/pcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/pdec.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/pdec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/qspi.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/qspi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/ramecc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/ramecc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/rstc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/rstc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/sdhc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/sdhc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/sercom.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/sercom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/supc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/supc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/tc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/tc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/tcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/tcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/trng.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/trng.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/component/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/component/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/adc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/adc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/adc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/adc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/aes.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/aes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/can0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/can0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/can1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/can1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ccl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ccl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/cmcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/cmcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/freqm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/freqm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/hmatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/hmatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/i2s.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/i2s.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/icm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/icm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/mclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/mclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/osc32kctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/osc32kctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/oscctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/oscctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pdec.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pdec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pukcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/pukcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/qspi.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/qspi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ramecc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/ramecc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/rstc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/rstc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sdhc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sdhc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sdhc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sdhc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom5.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom6.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom6.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom7.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/sercom7.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/supc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/supc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc5.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc6.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc6.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc7.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tc7.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/tcc4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/trng.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/trng.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/instance/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/instance/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51g18a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51g18a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51g19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51g19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j18a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j18a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51j20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51n19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51n19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51n20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51n20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51p19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51p19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51p20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/pio/samd51p20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/sam.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/sam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51g18a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51g18a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51g19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51g19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j18a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j18a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51j20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51n19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51n19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51n20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51n20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51p19a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51p19a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/samd51a/samd51p20a.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/samd51a/samd51p20a.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component-version.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component-version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/aes.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/aes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/ccl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/ccl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/mclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/mclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/mtb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/mtb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/opamp.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/opamp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/osc32kctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/osc32kctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/oscctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/oscctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/pac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/pac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/rstc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/rstc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/sercom.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/sercom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/supc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/supc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/tc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/tc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/tcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/tcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/trng.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/trng.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/component/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/component/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/aes.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/aes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ccl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ccl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dmac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dmac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dsu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/dsu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/eic.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/eic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/evsys.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/evsys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/gclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/gclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/mclk.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/mclk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/mtb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/mtb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/nvmctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/nvmctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/opamp.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/opamp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/osc32kctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/osc32kctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/oscctrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/oscctrl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/pac.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/pac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/pm.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/pm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/port.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/port.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ptc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/ptc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/rstc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/rstc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/rtc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom5.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/sercom5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/supc.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/supc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc3.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc4.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tc4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc0.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc2.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/tcc2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/trng.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/trng.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/instance/wdt.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/instance/wdt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e15b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e15b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21e18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21g18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j17bu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j17bu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j18bu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/pio/saml21j18bu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/sam.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/sam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e15b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e15b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21e18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21g18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j16b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j16b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j17b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j17b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j17bu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j17bu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j18b.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j18b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j18bu.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/device/saml21b/saml21j18bu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17d_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17d_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17d_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17d_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17du_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17du_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17du_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17du_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17l_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17l_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21e17l_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21e17l_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21g17d_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21g17d_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21g17d_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21g17d_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21g17l_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21g17l_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21g17l_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21g17l_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21j17d_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21j17d_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd21j17d_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd21j17d_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51g18a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51g18a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51g18a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51g18a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51g19a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51g19a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51g19a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51g19a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j18a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j18a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j18a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j18a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j19a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j19a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j19a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j19a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j20a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j20a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51j20a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51j20a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51n19a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51n19a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51n19a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51n19a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51n20a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51n20a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51n20a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51n20a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51p19a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51p19a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51p19a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51p19a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51p20a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51p20a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/samd51p20a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/samd51p20a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e15b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e15b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e15b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e15b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e16b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e16b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e16b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e16b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e17b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e17b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e17b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e17b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e18a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e18a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e18a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e18a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e18b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e18b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21e18b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21e18b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g16b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g16b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g16b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g16b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g17b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g17b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g17b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g17b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g18a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g18a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g18a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g18a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g18b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g18b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21g18b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21g18b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j16b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j16b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j16b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j16b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j17b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j17b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j17b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j17b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j17bu_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j17bu_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j17bu_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j17bu_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18a_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18a_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18a_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18a_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18b_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18b_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18b_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18b_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18bu_flash.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18bu_flash.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/link/saml21j18bu_sram.ld" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/link/saml21j18bu_sram.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/startup_samd21.c" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/startup_samd21.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/startup_samd51.c" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/startup_samd51.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/startup_saml21.c" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/startup_saml21.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21E15B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21E15B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21E16B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21E16B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21E17B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21E17B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21E18B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21E18B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21G16B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21G16B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21G17B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21G17B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21G18B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21G18B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21J16B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21J16B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21J17B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21J17B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21J17BU.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21J17BU.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21J18B.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21J18B.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/svd/ATSAML21J18BU.svd" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/svd/ATSAML21J18BU.svd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/system_device.c" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/system_device.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/system_device.h" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/system_device.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seal-device/toolchain/cortex-m4f.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/seal-device/toolchain/cortex-m4f.cmake" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug-arm-none-eabi-821/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-arm-none-eabi-8.2.1" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seal-device/toolchain/cortex-m0plus.cmake">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/seal-device/toolchain/common/arm-none-eabi.cmake">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/seal-device" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-148" />
+    <option name="y" value="-20" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestSeal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testProj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSeal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testProj" type="462c0819:PsiDirectoryNode" />
+              <item name="seal-device" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSeal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestSeal" TARGET_NAME="TestSeal" CONFIG_NAME="Debug-arm-none-eabi-8.2.1" RUN_TARGET_PROJECT_NAME="TestSeal" RUN_TARGET_NAME="TestSeal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aae81f37-e3bb-4611-9077-f144f2b58d0a" name="Default Changelist" comment="" />
+      <created>1562194581135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562194581135</updated>
+      <workItem from="1562194583565" duration="3960000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3960000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.82835823" weight="0.31419286" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.1716418" side_tool="true" weight="0.31419286" />
+      <window_info active="true" anchor="bottom" id="CMake" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/seal-device/device/saml21b/component/port.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="262" column="8" selection-start-line="262" selection-start-column="8" selection-end-line="262" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seal-device/toolchain/cortex-m0plus.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seal-device/toolchain/common/arm-none-eabi.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

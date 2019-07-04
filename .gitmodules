@@ -1,0 +1,3 @@
+[submodule "seal-device"]
+	path = seal-device
+	url = https://github.com/TheSlat/seal-device.git
