@@ -10,6 +10,8 @@
 *.gpdsc text eol=lf
 *.ld text eol=lf
 *.cmake text eol=lf
+*.json text eol=lf
+CMakeLists.txt text eol=lf
 
 # Declare files that will always have CRLF (windows) line endings on checkout.
 *.atsln text eol=crlf

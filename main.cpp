@@ -1,62 +1,32 @@
 #include "device.h"
 #include <cstdint>
 
-#define GPIO_PIN_FUNCTION_A 0
-#define GPIO_PIN_FUNCTION_B 1
-#define GPIO_PIN_FUNCTION_C 2
-#define GPIO_PIN_FUNCTION_D 3
-#define GPIO_PIN_FUNCTION_E 4
-#define GPIO_PIN_FUNCTION_F 5
-#define GPIO_PIN_FUNCTION_G 6
-#define GPIO_PIN_FUNCTION_H 7
-#define GPIO_PIN_FUNCTION_I 8
+enum gpioPullMode : uint8_t { GPIO_PULL_OFF, GPIO_PULL_UP, GPIO_PULL_DOWN };
+enum gpioDirection : uint8_t { GPIO_DIRECTION_OFF, GPIO_DIRECTION_IN, GPIO_DIRECTION_OUT };
+enum gpioPort : uint8_t { GPIO_PORTA = 0, GPIO_PORTB = 1, GPIO_PORTC = 2, GPIO_PORTD = 3, GPIO_PORTE = 4 };
+enum gpioFunc : uint8_t { GPIO_FUNC_A, GPIO_FUNC_B, GPIO_FUNC_C, GPIO_FUNC_D, GPIO_FUNC_E, GPIO_FUNC_F, GPIO_FUNC_G, GPIO_FUNC_H, GPIO_FUNC_I };
+constexpr uint32_t GPIO_PIN_FUNCTION_OFF = 0xffffffffu;
 
-#define CLK_ALARM GPIO(GPIO_PORTA, 1)
-#define BATLVL GPIO(GPIO_PORTA, 2)
-#define MOD2P0 GPIO(GPIO_PORTA, 4)
-#define MOD2P1 GPIO(GPIO_PORTA, 5)
-#define MOD2P2 GPIO(GPIO_PORTA, 6)
-#define MOD2P3 GPIO(GPIO_PORTA, 7)
-#define SYS_SDA GPIO(GPIO_PORTA, 8)
-#define SYS_SCL GPIO(GPIO_PORTA, 9)
-#define AIN GPIO(GPIO_PORTA, 10)
-#define LED_BLUE GPIO(GPIO_PORTA, 11)
-#define IMU_SDA GPIO(GPIO_PORTA, 12)
-#define IMU_SCL GPIO(GPIO_PORTA, 13)
-#define IMU_INT1 GPIO(GPIO_PORTA, 14)
-#define IMU_INT2 GPIO(GPIO_PORTA, 15)
-#define MEM_MISO GPIO(GPIO_PORTA, 16)
-#define MEM_CLK GPIO(GPIO_PORTA, 17)
-#define MEM_CS0 GPIO(GPIO_PORTA, 18)
-#define MEM_MOSI GPIO(GPIO_PORTA, 19)
-#define MOD1P2 GPIO(GPIO_PORTA, 20)
-#define MOD1P3 GPIO(GPIO_PORTA, 21)
-#define MOD1P0 GPIO(GPIO_PORTA, 22)
-#define MOD1P1 GPIO(GPIO_PORTA, 23)
-#define USB_N GPIO(GPIO_PORTA, 24)
-#define USB_P GPIO(GPIO_PORTA, 25)
-#define MEMCS3 GPIO(GPIO_PORTA, 27)
-#define VBUS_DETECT GPIO(GPIO_PORTB, 2)
-#define MOD2INT GPIO(GPIO_PORTB, 3)
-#define LED_RED GPIO(GPIO_PORTB, 8)
-#define LED_GREEN GPIO(GPIO_PORTB, 9)
-#define MOD1INT GPIO(GPIO_PORTB, 10)
-#define IMU_INT3 GPIO(GPIO_PORTB, 11)
-#define MEMCS1 GPIO(GPIO_PORTB, 22)
-#define MEMCS2 GPIO(GPIO_PORTB, 23)
+constexpr uint8_t definePin(const enum gpioPort port, const uint8_t pin) noexcept {
+    return ((static_cast<uint8_t>(port) & 0x07U) << 5U) + (pin & 0x1FU);  // binary compatable with atmel HAL
+}
 
-#define GPIO_PIN(n) (((n)&0x1Fu) << 0)
-#define GPIO_PORT(n) ((n) >> 5)
-#define GPIO(port, pin) ((((port)&0x7u) << 5) + ((pin)&0x1Fu))
-#define GPIO_PIN_FUNCTION_OFF 0xffffffff
+constexpr gpioPort getPort(const uint8_t pin) noexcept {
+    return static_cast<gpioPort>(pin >> 5u);
+}
 
-enum gpio_pull_mode { GPIO_PULL_OFF, GPIO_PULL_UP, GPIO_PULL_DOWN };
-enum gpio_direction { GPIO_DIRECTION_OFF, GPIO_DIRECTION_IN, GPIO_DIRECTION_OUT };
-enum gpio_port { GPIO_PORTA, GPIO_PORTB, GPIO_PORTC, GPIO_PORTD, GPIO_PORTE };
+constexpr uint8_t getPin(const uint8_t pin) noexcept {
+    return pin & 0x1Fu;
+}
 
-void gpio_set_pin_direction(const uint8_t pin, const enum gpio_direction direction) {
-	const uint8_t port = GPIO_PORT(pin);
-	const uint32_t mask = 1U << GPIO_PIN(pin);
+constexpr uint8_t LED_BLUE  = definePin(GPIO_PORTA, 11);
+constexpr uint8_t LED_RED   = definePin(GPIO_PORTB, 8);
+constexpr uint8_t LED_GREEN = definePin(GPIO_PORTB, 9);
+
+
+void gpio_set_pin_direction(const uint8_t pin, const gpioDirection direction) {
+	const gpioPort port = getPort(pin);
+	const uint32_t mask = 1U << getPin(pin);
 
 	switch (direction) {
 	case GPIO_DIRECTION_OFF:
@@ -80,17 +50,17 @@ void gpio_set_pin_direction(const uint8_t pin, const enum gpio_direction directi
 }
 
 void gpio_toggle_pin_level(const uint8_t pin) {
-    const uint8_t port = (enum gpio_port)GPIO_PORT(pin);
-    const uint32_t mask = 1U << GPIO_PIN(pin);
+    const gpioPort port = getPort(pin);
+    const uint32_t mask = 1U << getPin(pin);
     PORT->Group[port].OUTTGL.reg = mask;
 }
 
-//void gpio_set_pin_level(const uint8_t pin, const bool level) {
-//	_gpio_set_level((enum gpio_port)GPIO_PORT(pin), 1U << GPIO_PIN(pin), level);
-//}
-
-void delayMS(int t) {
-    while(t-- > 0) { }
+void delayMS(uint32_t t) {
+    t *= 1000;      // hardcoded to handle the default CPU frequency
+    while(t-- > 0) {
+        // NOOP for delay
+        asm volatile ("");
+    }
 }
 
 int main() {
@@ -102,11 +72,11 @@ int main() {
 
     while(1) {
         gpio_toggle_pin_level(LED_BLUE);
-        delayMS(100000);
+        delayMS(250);
         gpio_toggle_pin_level(LED_GREEN);
-        delayMS(100000);
+        delayMS(250);
         gpio_toggle_pin_level(LED_RED);
-        delayMS(100000);
+        delayMS(250);
 
     }
 }
