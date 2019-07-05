@@ -9,6 +9,7 @@
       "cwd": "${workspaceRoot}",
       "program": "${workspaceRoot}\\CMakeBuilds\\build\\${name}\\TestSeal.elf",
       "MIMode": "gdb",
+      "stopAtEntry": true,
       "externalConsole": true,
       "inheritEnvironments": [ "gcc_arm"  ],
       "miDebuggerPath": "C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\bin\\arm-none-eabi-gdb.exe",
@@ -40,6 +41,20 @@
       "serverStarted": "GDB\\ server\\ started",
       "filterStderr": true,
       "filterStdout": true
+    },
+    {
+      "type": "cppdbg",
+      "name": "SAML21G18B-Debug2",
+      "project": "CMakeLists.txt",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}\\CMakeBuilds\\build\\SAML21G18B-Debug\\TestSeal.elf",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\bin\\arm-none-eabi-gdb.exe",
+      "miDebuggerServerAddress": "localhost:2331",
+      "launchCompleteCommand": "None",
+      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink_V620h\\JLinkGDBServer.exe",
+      "debugServerArgs": "-select USB -device ATSAML21G18B -if SWD -speed 4000 -ir",
+      "externalConsole": true
     }
   ]
 }

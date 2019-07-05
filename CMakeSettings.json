@@ -1,44 +1,50 @@
 {
+  // https://docs.microsoft.com/en-us/cpp/build/cmakesettings-reference?view=vs-2019
+  "environments": [
+    {
+      "INCLUDE": "C:\\\\GNUToolsARMEmbedded\\\\8.2.1-1.2-20190119-1237\\\\arm-none-eabi\\\\include;C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\arm-none-eabi\\include\\c++\\8.2.1"
+    }
+  ],
   "configurations": [
     {
-        "name": "SAML21G18B-Debug",
-        "generator": "Ninja",
-        "configurationType": "Debug",
-        "buildRoot": "${workspaceRoot}\\CMakeBuilds\\build\\${name}",
-        "installRoot": "${workspaceRoot}\\CMakeBuilds\\install\\${name}",
-        "cmakeCommandArgs": "",
-        "buildCommandArgs": "-v",
-        "ctestCommandArgs": "",
-        "variables": [
-            {
-                "name": "DEVICE_TYPE",
-                "value": "SAML21G18B",
-                "type": "STRING"
-            }
-        ],
-        "intelliSenseMode": "linux-gcc-arm",
-        "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m0plus.cmake",
-        "inheritEnvironments": [ "gcc_arm" ]
+      "name": "SAML21G18B-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${workspaceRoot}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${workspaceRoot}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "DEVICE_TYPE",
+          "value": "SAML21G18B",
+          "type": "STRING"
+        }
+      ],
+      "intelliSenseMode": "linux-gcc-arm",
+      "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m0plus.cmake",
+      "inheritEnvironments": [ "gcc_arm" ]
     },
     {
-        "name": "SAMD51J19A-Debug",
-        "generator": "Ninja",
-        "configurationType": "Debug",
-        "buildRoot": "${workspaceRoot}\\CMakeBuilds\\build\\${name}",
-        "installRoot": "${workspaceRoot}\\CMakeBuilds\\install\\${name}",
-        "cmakeCommandArgs": "",
-        "buildCommandArgs": "-v",
-        "ctestCommandArgs": "",
-        "variables": [
-            {
-                "name": "DEVICE_TYPE",
-                "value": "SAMD51J19A",
-                "type": "STRING"
-            }
-        ],
-        "intelliSenseMode": "linux-gcc-arm",
-        "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m4f.cmake",
-        "inheritEnvironments": [ "gcc_arm" ]
+      "name": "SAMD51J19A-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${workspaceRoot}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${workspaceRoot}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "DEVICE_TYPE",
+          "value": "SAMD51J19A",
+          "type": "STRING"
+        }
+      ],
+      "intelliSenseMode": "linux-gcc-arm",
+      "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m4f.cmake",
+      "inheritEnvironments": [ "gcc_arm" ]
     }
   ]
 }
