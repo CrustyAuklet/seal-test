@@ -1,6 +1,0 @@
-[
-    {
-        "name": "Cortex-M0Plus",
-        "toolchainFile": "${workspaceFolder}/seal-device/toolchain/cortex-m0plus.cmake"
-    }
-]
