@@ -1,4 +1,7 @@
 {
+  // enter the below line in Command Window to get debug file of gdb launch
+  // Debug.MIDebugLog /On:<logfile>
+  // closest thing to documentation on this file: https://github.com/microsoft/vscode-cpptools/blob/master/launch.md
   "version": "0.2.1",
   "defaults": {},
   "configurations": [
@@ -22,10 +25,10 @@
           "ignoreFailures": true
         },
         {
-          "text": "-environment-cd ${workspaceRoot}\\build\\SAML21G18B-Debug"
+          "text": "-environment-cd ${workspaceRoot}\\CMakeBuilds\\build\\SAML21G18B-Debug"
         },
         {
-          "text": "-file-exec-and-symbols ${workspaceRootFolderName}.elf",
+          "text": "-file-exec-and-symbols TestSeal.elf",
           "description": "load file",
           "ignoreFailures": false
         },
@@ -34,12 +37,14 @@
           "ignoreFailures": true
         }
       ],
+      //"launchCompleteCommand": "",
+      "visualizerFile": "${debugInfo.linuxNatvisPath}",
       "showDisplayString": true,
       "miDebuggerServerAddress": "localhost:2331",
       "launchCompleteCommand": "None",
-      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink\\JLinkGDBServer.exe",
+      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink\\JLinkGDBServerCL.exe",
       "debugServerArgs": "-select USB -device ATSAML21G18B -if SWD -speed 4000 -ir",
-      "serverStarted": "GDB\\ server\\ started",
+      "serverStarted": "Connected to target", // Server-started pattern to look for in the debug server output. Segger doesn't do anything!
       "filterStderr": true,
       "filterStdout": true
     }

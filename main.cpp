@@ -70,13 +70,15 @@ int main() {
     gpio_set_pin_direction(LED_GREEN, GPIO_DIRECTION_OUT);
     gpio_set_pin_direction(LED_RED, GPIO_DIRECTION_OUT);
 
+    int delay = 250;
+
     while(1) {
         gpio_toggle_pin_level(LED_BLUE);
-        delayMS(250);
+        delayMS(delay);
         gpio_toggle_pin_level(LED_GREEN);
-        delayMS(250);
+        delayMS(delay);
         gpio_toggle_pin_level(LED_RED);
-        delayMS(250);
+        delayMS(delay);
 
     }
 }
