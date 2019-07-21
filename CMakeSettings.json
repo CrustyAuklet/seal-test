@@ -1,10 +1,5 @@
 {
   // https://docs.microsoft.com/en-us/cpp/build/cmakesettings-reference?view=vs-2019
-  "environments": [
-    {
-      "INCLUDE": "C:\\\\GNUToolsARMEmbedded\\\\8.2.1-1.2-20190119-1237\\\\arm-none-eabi\\\\include;C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\arm-none-eabi\\include\\c++\\8.2.1"
-    }
-  ],
   "configurations": [
     {
       "name": "SAML21G18B-Debug",
@@ -24,7 +19,12 @@
       ],
       "intelliSenseMode": "linux-gcc-arm",
       "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m0plus.cmake",
-      "inheritEnvironments": [ "gcc_arm" ]
+      "inheritEnvironments": [ "gcc_arm" ],
+      "environments": [
+        {
+          "INCLUDE": "C:\\tools\\gcc-arm-none-eabi-8-2019-q3\\arm-none-eabi\\include;C:\\tools\\gcc-arm-none-eabi-8-2019-q3\\arm-none-eabi\\include\\c++\\8.3.1"
+        }
+      ]
     },
     {
       "name": "SAMD51J19A-Debug",
@@ -44,7 +44,12 @@
       ],
       "intelliSenseMode": "linux-gcc-arm",
       "cmakeToolchain": "${workspaceRoot}\\seal-device\\toolchain\\cortex-m4f.cmake",
-      "inheritEnvironments": [ "gcc_arm" ]
+      "inheritEnvironments": [ "gcc_arm" ],
+      "environments": [
+        {
+          "INCLUDE": "C:\\tools\\gcc-arm-none-eabi-8-2019-q3\\arm-none-eabi\\include;C:\\tools\\gcc-arm-none-eabi-8-2019-q3\\arm-none-eabi\\include\\c++\\8.3.1"
+        }
+      ]
     }
   ]
 }

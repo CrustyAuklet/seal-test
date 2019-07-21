@@ -7,12 +7,14 @@
       "name": "SAML21G18B-Debug",
       "project": "CMakeLists.txt",
       "cwd": "${workspaceRoot}",
-      "program": "${workspaceRoot}\\CMakeBuilds\\build\\${name}\\TestSeal.elf",
+      "program": "${workspaceRoot}\\CMakeBuilds\\build\\SAML21G18B-Debug\\TestSeal.elf",
       "MIMode": "gdb",
       "stopAtEntry": true,
       "externalConsole": true,
-      "inheritEnvironments": [ "gcc_arm"  ],
-      "miDebuggerPath": "C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\bin\\arm-none-eabi-gdb.exe",
+      "inheritEnvironments": [
+        "gcc_arm"
+      ],
+      "miDebuggerPath": "C:\\tools\\gcc-arm-none-eabi-8-2019-q3\\bin\\arm-none-eabi-gdb.exe",
       "setupCommands": [
         {
           "text": "Documentation: Learn how to configure embedded debugging",
@@ -20,7 +22,7 @@
           "ignoreFailures": true
         },
         {
-          "text": "-environment-cd ${workspaceRoot}/BUILD"
+          "text": "-environment-cd ${workspaceRoot}\\build\\SAML21G18B-Debug"
         },
         {
           "text": "-file-exec-and-symbols ${workspaceRootFolderName}.elf",
@@ -32,29 +34,14 @@
           "ignoreFailures": true
         }
       ],
-      "visualizerFile": "${debugInfo.linuxNatvisPath}",
       "showDisplayString": true,
       "miDebuggerServerAddress": "localhost:2331",
       "launchCompleteCommand": "None",
-      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink_V620h\\JLinkGDBServer.exe",
+      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink\\JLinkGDBServer.exe",
       "debugServerArgs": "-select USB -device ATSAML21G18B -if SWD -speed 4000 -ir",
       "serverStarted": "GDB\\ server\\ started",
       "filterStderr": true,
       "filterStdout": true
-    },
-    {
-      "type": "cppdbg",
-      "name": "SAML21G18B-Debug2",
-      "project": "CMakeLists.txt",
-      "cwd": "${workspaceRoot}",
-      "program": "${workspaceRoot}\\CMakeBuilds\\build\\SAML21G18B-Debug\\TestSeal.elf",
-      "MIMode": "gdb",
-      "miDebuggerPath": "C:\\GNUToolsARMEmbedded\\8.2.1-1.2-20190119-1237\\bin\\arm-none-eabi-gdb.exe",
-      "miDebuggerServerAddress": "localhost:2331",
-      "launchCompleteCommand": "None",
-      "debugServerPath": "C:\\Program Files (x86)\\SEGGER\\JLink_V620h\\JLinkGDBServer.exe",
-      "debugServerArgs": "-select USB -device ATSAML21G18B -if SWD -speed 4000 -ir",
-      "externalConsole": true
     }
   ]
 }
