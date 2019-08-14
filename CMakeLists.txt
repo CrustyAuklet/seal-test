@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(TestSeal 
+project(TestSeal
         LANGUAGES C CXX )
 
 # add the CMSIS module to this project.
@@ -21,6 +21,8 @@ target_compile_features(${PROJECT_NAME}
 )
 
 # consume the PUBLIC and INTERFACE properties, includes, and sources from seal-device
+# seal-device is actually two layers of INTERFACE libraries, to mimic CMSIS layers
+# all properties are transitive though, so our project gets everything it needs
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
         seal-device

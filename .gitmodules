@@ -1,3 +1,4 @@
 [submodule "seal-device"]
 	path = seal-device
 	url = https://github.com/CrustyAuklet/seal-device.git
+	branch = master
