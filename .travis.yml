@@ -16,11 +16,9 @@ os: linux
         - gcc-9
   env:
     - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
-    - ARM_URL=
 
 before_install:
     - eval "${MATRIX_EVAL}"
-
 
 addons:
   sonarcloud:
