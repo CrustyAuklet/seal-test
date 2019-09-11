@@ -49,11 +49,11 @@ install:
   - cd ${TRAVIS_BUILD_DIR}
   
   # Download the ARM GCC Embedded Toolchain
-  wget $ARM_URL -O /tmp/gcc-arm-none-eabi.tar.bz2
+  - wget $ARM_URL -O /tmp/gcc-arm-none-eabi.tar.bz2
   # Unzip the ARM GCC Embedded Toolchain
-  tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2
+  - tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2
   # Export path to ARM GCC binaries
-  export PATH=$PATH:$PWD/$ARM_NAME/bin/
+  - export PATH=$PATH:$PWD/$ARM_NAME/bin/
   
 before_script:
   - cmake --version
