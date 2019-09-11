@@ -16,7 +16,7 @@ addons:
       secure: "8786c9af96075a5daef2f05e6b6518f2146496aa" # encrypted value of your token
 
 # the install step will take care of deploying a newer cmake version
-install:    
+install:
   # first we create a directory for the CMake binaries
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
@@ -36,16 +36,17 @@ install:
   - PATH=${DEPS_DIR}/cmake-install:${DEPS_DIR}/cmake-install/bin:$PATH
   # don't forget to switch back to the main build directory once you are done
   - cd ${TRAVIS_BUILD_DIR}
-  
+
   # Download the ARM GCC Embedded Toolchain
   - wget $ARM_URL -O /tmp/gcc-arm-none-eabi.tar.bz2
   # Unzip the ARM GCC Embedded Toolchain
-  - tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2
+  - tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2 > /dev/null
   # Export path to ARM GCC binaries
   - export PATH=$PATH:$PWD/$ARM_NAME/bin/
-  
+
 before_script:
   - cmake --version
+  - arm-none-eani-g++ --version
   # create a build folder for the out-of-source build
   - mkdir build
   # switch to build directory
