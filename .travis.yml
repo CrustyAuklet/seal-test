@@ -1,0 +1,81 @@
+language: cpp
+compiler: gcc
+
+env:
+  ARM_URL=https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2
+  ARM_NAME=gcc-arm-none-eabi-8-2019-q3-update
+  CMAKE_URL=https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz
+  
+os: linux
+  addons:
+    apt:
+      sources:
+        - ubuntu-toolchain-r-test
+      packages:
+        - g++-9
+        - gcc-9
+  env:
+    - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
+    - ARM_URL=
+
+before_install:
+    - eval "${MATRIX_EVAL}"
+
+
+addons:
+  sonarcloud:
+    organization: "crustyauklet"
+    token:
+      secure: "8786c9af96075a5daef2f05e6b6518f2146496aa" # encrypted value of your token
+
+# the install step will take care of deploying a newer cmake version
+install:    
+  # first we create a directory for the CMake binaries
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+  # we use wget to fetch the cmake binaries
+  - travis_retry wget --no-check-certificate $CMAKE_URL
+  # this is optional, but useful:
+  # do a quick md5 check to ensure that the archive we downloaded did not get compromised
+  #- echo "f3546812c11ce7f5d64dc132a566b749 *cmake-3.3.2-Linux-x86_64.tar.gz" > cmake_md5.txt
+  #- md5sum -c cmake_md5.txt
+  # extract the binaries; the output here is quite lengthy,
+  # so we swallow it to not clutter up the travis console
+  - tar -xvf cmake-3.15.3-Linux-x86_64.tar.gz > /dev/null
+  - mv cmake-3.15.3-Linux-x86_64 cmake-install
+  # add both the top-level directory and the bin directory from the archive
+  # to the system PATH. By adding it to the front of the path we hide the
+  # preinstalled CMake with our own.
+  - PATH=${DEPS_DIR}/cmake-install:${DEPS_DIR}/cmake-install/bin:$PATH
+  # don't forget to switch back to the main build directory once you are done
+  - cd ${TRAVIS_BUILD_DIR}
+  
+  # Download the ARM GCC Embedded Toolchain
+  wget $ARM_URL -O /tmp/gcc-arm-none-eabi.tar.bz2
+  # Unzip the ARM GCC Embedded Toolchain
+  tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2
+  # Export path to ARM GCC binaries
+  export PATH=$PATH:$PWD/$ARM_NAME/bin/
+  
+before_script:
+  - cmake --version
+  # create a build folder for the out-of-source build
+  - mkdir build
+  # switch to build directory
+  - cd build
+  # run cmake; here we assume that the project's
+  # top-level CMakeLists.txt is located at '..'
+  - cmake .. -DCMAKE_TOOLCHAIN_FILE=../seal-device/toolchain/cortex-m0plus.cmake
+
+script:
+  - make clean
+  # Wraps the compilation with the Build Wrapper to generate configuration (used
+  # later by the SonarQube Scanner) into the "bw-output" folder
+  - build-wrapper-linux-x86-64 --out-dir bw-output make all
+  # once CMake has done its job we just build using make as usual
+  - make
+  # if the project uses ctest we can run the tests like this
+  # - make test
+  # And finally run the SonarQube analysis - read the "sonar-project.properties"
+  # file to see the specific configuration
+  - sonar-scanner
