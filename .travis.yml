@@ -6,9 +6,6 @@ env:
   ARM_NAME=gcc-arm-none-eabi-8-2019-q3-update
   CMAKE_URL=https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz
 
-before_install:
-    - eval "${MATRIX_EVAL}"
-
 addons:
   sonarcloud:
     organization: "crustyauklet"
@@ -45,8 +42,7 @@ install:
   - export PATH=$PATH:$PWD/$ARM_NAME/bin/
 
 before_script:
-  - cmake --version
-  - arm-none-eani-g++ --version
+  - cmake --version && arm-none-eabi-g++ -v && arm-none-eabi-gcc -v
   # create a build folder for the out-of-source build
   - mkdir build
   # switch to build directory
