@@ -65,4 +65,4 @@ script:
   # And finally run the SonarQube analysis - read the "sonar-project.properties"
   # file to see the specific configuration
   - cd ..
-  - sonar-scanner -X --verbose
+  - sonar-scanner -Dsonar.verbose=true -X
