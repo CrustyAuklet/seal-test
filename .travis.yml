@@ -1,11 +1,6 @@
 language: cpp
 compiler: gcc
 
-env:
-  ARM_URL=https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2
-  ARM_NAME=gcc-arm-none-eabi-8-2019-q3-update
-  CMAKE_URL=https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz
-
 addons:
   sonarcloud:
     organization: "crustyauklet"
@@ -14,32 +9,39 @@ addons:
 
 # the install step will take care of deploying a newer cmake version
 install:
+  # URL and Names as variables
+  - ARM_URL="https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2"
+  - ARM_NAME="gcc-arm-none-eabi-8-2019-q3-update"
+  - CMAKE_URL="https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz"
+  - CMAKE-NAME="cmake-3.15.3-Linux-x86_64"
+
   # first we create a directory for the CMake binaries
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
   # we use wget to fetch the cmake binaries
-  - travis_retry wget --no-check-certificate $CMAKE_URL
+  - travis_retry wget --no-check-certificate ${CMAKE_URL}
   # this is optional, but useful:
   # do a quick md5 check to ensure that the archive we downloaded did not get compromised
   #- echo "f3546812c11ce7f5d64dc132a566b749 *cmake-3.3.2-Linux-x86_64.tar.gz" > cmake_md5.txt
   #- md5sum -c cmake_md5.txt
   # extract the binaries; the output here is quite lengthy,
   # so we swallow it to not clutter up the travis console
-  - tar -xvf cmake-3.15.3-Linux-x86_64.tar.gz > /dev/null
-  - mv cmake-3.15.3-Linux-x86_64 cmake-install
+  - tar -xvf ${CMAKE_NAME}.tar.gz > /dev/null
+  - mv ${CMAKE_NAME} cmake-install
   # add both the top-level directory and the bin directory from the archive
   # to the system PATH. By adding it to the front of the path we hide the
   # preinstalled CMake with our own.
   - PATH=${DEPS_DIR}/cmake-install:${DEPS_DIR}/cmake-install/bin:$PATH
-  # don't forget to switch back to the main build directory once you are done
-  - cd ${TRAVIS_BUILD_DIR}
 
   # Download the ARM GCC Embedded Toolchain
-  - wget $ARM_URL -O /tmp/gcc-arm-none-eabi.tar.bz2
+  - travis_retry wget --no-check-certificate $ARM_URL -O gcc-arm-none-eabi.tar.bz2
   # Unzip the ARM GCC Embedded Toolchain
   - tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2 > /dev/null
   # Export path to ARM GCC binaries
-  - export PATH=$PATH:$PWD/$ARM_NAME/bin/
+  - export PATH=${DEPS_DIR}/${ARM_NAME}/bin/:$PATH
+
+  # don't forget to switch back to the main build directory once you are done
+  - cd ${TRAVIS_BUILD_DIR}
 
 before_script:
   - cmake --version && arm-none-eabi-g++ -v && arm-none-eabi-gcc -v
