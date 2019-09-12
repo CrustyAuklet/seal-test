@@ -13,7 +13,7 @@ install:
   - ARM_URL="https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2"
   - ARM_NAME="gcc-arm-none-eabi-8-2019-q3-update"
   - CMAKE_URL="https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz"
-  - CMAKE-NAME="cmake-3.15.3-Linux-x86_64"
+  - CMAKE_NAME="cmake-3.15.3-Linux-x86_64"
 
   # first we create a directory for the CMake binaries
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
@@ -57,7 +57,7 @@ script:
   - make clean
   # Wraps the compilation with the Build Wrapper to generate configuration (used
   # later by the SonarQube Scanner) into the "bw-output" folder
-  - build-wrapper-linux-x86-64 --out-dir bw-output make all
+  - build-wrapper-linux-x86-64 --out-dir ../bw-output make all
   # once CMake has done its job we just build using make as usual
   - make
   # if the project uses ctest we can run the tests like this
