@@ -36,7 +36,7 @@ install:
   # Download the ARM GCC Embedded Toolchain
   - travis_retry wget --no-check-certificate $ARM_URL -O gcc-arm-none-eabi.tar.bz2
   # Unzip the ARM GCC Embedded Toolchain
-  - tar -xvjf /tmp/gcc-arm-none-eabi.tar.bz2 > /dev/null
+  - tar -xvjf gcc-arm-none-eabi.tar.bz2 > /dev/null
   # Export path to ARM GCC binaries
   - export PATH=${DEPS_DIR}/${ARM_NAME}/bin/:$PATH
 
